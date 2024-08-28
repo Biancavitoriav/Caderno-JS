@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno - DAD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+        <h1>Caderno</h1>
+        <a href="./index.html"><img src="Assets/casa.png" alt="" id="home"></a>
+    </header>
+    <main>
+        <ul id="lista">
+            <li class="tema">Eventos
+                <div class="exp invisivel">
+                    <h2>Tag</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, </p>
+                    <code>
+                        &lt; p onclick=clicar()&gt;&lt;Clique
+                    </code>
+                    <h2>JS</h2>
+                    <p></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, quasi consectetur. Voluptatem, nobis perspiciatis odio est perferendis tempore ratione </p>
+                    
+                </div>
+            </li>
+            <li class="tema">Eventos</li>
+            <li class="tema">Click</li>
+            <li class="tema">Mouseenter/Mouseleave
+                <div class="exp">
+                    <h2>Mouseenter</h2>
+                    <p>Evento disparado quando o mouse do usuário passar sobre o elemento.
+                    </p>
+                    <p class="quadrado">
+                    </p>
+                    <pre>
+                        <code>
+const quadradoEnter = document.getElementsByClassName('quadrado')[0]
+quadradoEnter.addEventListener('mouseenter',()=>{
+    const r = Math.floor(Math.random() * 256)
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+    quadradoEnter.style.backgroundColor = `rgb(${r},${g},${b})`
+})
+                        </code>
+                    </pre>
+                    <h2>Mouseleave</h2>
+                    <p>Evento disparado quando o mouse do usuário sair do elemento.
+                </div>
+            </li>
+                <li class="tema">KeyUp/KeyDown
+                    <div class="exp invisivel">
+                        <h2>KeyUp</h2>
+                        <p>Evento que é disparado quando a tecla é solta, considerando o caracter esc</p>
+                        <input type="text" name="" id="mayla">
+                        <br>
+                        <div class="produto inline-block">Abacaxi</div>
+                        <div class="produto inline-block">Abacate</div>
+                        <div class="produto inline-block">Banana</div>
+                        <div class="produto inline-block">Bergamota</div>
+                        <div class="produto inline-block">Caqui</div>
+                        <div class="produto inline-block">Carambola</div>
+                        <div class="produto inline-block">Ciwi</div>
+                        <h2>KeyDown</h2>
+                        <p>O evento é disparado quando a tecla é pressionada, não considerando o que foi escrito no momento do disparo</p>
+                        <input type="text" name="" id="mayla">
+                        <br>
+                        <p id="palavrainvertida"></p>
+                    </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
